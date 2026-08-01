@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spendledger-config
+  namespace: spendledger
+data:
+  ENVIRONMENT: production
+  LOG_LEVEL: INFO
+  AUTO_CREATE_SCHEMA: "false"
+  OUTBOX_POLL_SECONDS: "1"
+  OUTBOX_BATCH_SIZE: "50"
+  OUTBOX_MAX_ATTEMPTS: "5"
+  OUTBOX_LOCK_TIMEOUT_SECONDS: "60"

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title description">
+  <title id="title">SpendLedger project cover</title>
+  <desc id="description">A production-oriented card spend ledger and reconciliation service with an API, PostgreSQL consistency boundary, and reliable outbox worker.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071426"/>
+      <stop offset="0.55" stop-color="#0b1f38"/>
+      <stop offset="1" stop-color="#102f46"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#33d6b4"/>
+      <stop offset="1" stop-color="#57a8ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000814" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="760" fill="url(#background)"/>
+  <circle cx="1430" cy="80" r="270" fill="#1b6ca8" opacity="0.12"/>
+  <circle cx="120" cy="710" r="340" fill="#26c6a5" opacity="0.08"/>
+
+  <g transform="translate(110 82)">
+    <rect x="0" y="0" width="74" height="74" rx="18" fill="url(#accent)"/>
+    <path d="M20 24h34M20 37h34M20 50h21" stroke="#071426" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="52" cy="51" r="8" fill="#071426"/>
+    <text x="98" y="53" fill="#f7fbff" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="700">SpendLedger</text>
+    <text x="2" y="124" fill="#9fb8cf" font-family="Segoe UI, Arial, sans-serif" font-size="26">Reliable card-spend accounting and settlement reconciliation</text>
+  </g>
+
+  <g transform="translate(110 270)" filter="url(#shadow)">
+    <rect x="0" y="0" width="280" height="190" rx="24" fill="#102a45" stroke="#2b5373"/>
+    <text x="30" y="50" fill="#66e0c3" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">01 · INGEST</text>
+    <text x="30" y="91" fill="#f4f8fc" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="600">Card events</text>
+    <text x="30" y="130" fill="#a9bfd2" font-family="Segoe UI, Arial, sans-serif" font-size="19">Authorization · Capture</text>
+    <text x="30" y="160" fill="#a9bfd2" font-family="Segoe UI, Arial, sans-serif" font-size="19">Refund · Reversal</text>
+
+    <path d="M300 95h70" stroke="#57a8ff" stroke-width="4" stroke-linecap="round"/>
+    <path d="m360 84 14 11-14 11" fill="none" stroke="#57a8ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="390" y="0" width="280" height="190" rx="24" fill="#102a45" stroke="#2b5373"/>
+    <text x="420" y="50" fill="#66e0c3" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">02 · VALIDATE</text>
+    <text x="420" y="91" fill="#f4f8fc" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="600">FastAPI service</text>
+    <text x="420" y="130" fill="#a9bfd2" font-family="Segoe UI, Arial, sans-serif" font-size="19">State machine · Scopes</text>
+    <text x="420" y="160" fill="#a9bfd2" font-family="Segoe UI, Arial, sans-serif" font-size="19">Two-layer idempotency</text>
+
+    <path d="M690 95h70" stroke="#57a8ff" stroke-width="4" stroke-linecap="round"/>
+    <path d="m750 84 14 11-14 11" fill="none" stroke="#57a8ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="780" y="0" width="280" height="190" rx="24" fill="#102a45" stroke="#2b5373"/>
+    <text x="810" y="50" fill="#66e0c3" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">03 · COMMIT</text>
+    <text x="810" y="91" fill="#f4f8fc" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="600">PostgreSQL</text>
+    <text x="810" y="130" fill="#a9bfd2" font-family="Segoe UI, Arial, sans-serif" font-size="19">Ledger · Audit log</text>
+    <text x="810" y="160" fill="#a9bfd2" font-family="Segoe UI, Arial, sans-serif" font-size="19">Transactional outbox</text>
+
+    <path d="M1080 95h70" stroke="#57a8ff" stroke-width="4" stroke-linecap="round"/>
+    <path d="m1140 84 14 11-14 11" fill="none" stroke="#57a8ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="1170" y="0" width="320" height="190" rx="24" fill="#102a45" stroke="#2b5373"/>
+    <text x="1200" y="50" fill="#66e0c3" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700">04 · DELIVER</text>
+    <text x="1200" y="91" fill="#f4f8fc" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="600">Outbox worker</text>
+    <text x="1200" y="130" fill="#a9bfd2" font-family="Segoe UI, Arial, sans-serif" font-size="19">Retry · Dead letter</text>
+    <text x="1200" y="160" fill="#a9bfd2" font-family="Segoe UI, Arial, sans-serif" font-size="19">Lease recovery</text>
+  </g>
+
+  <g transform="translate(110 540)">
+    <rect x="0" y="0" width="290" height="76" rx="38" fill="#0d233b" stroke="#2c5b78"/>
+    <circle cx="38" cy="38" r="13" fill="#33d6b4"/>
+    <text x="66" y="47" fill="#dceaf4" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">Double-entry ledger</text>
+
+    <rect x="320" y="0" width="290" height="76" rx="38" fill="#0d233b" stroke="#2c5b78"/>
+    <circle cx="358" cy="38" r="13" fill="#33d6b4"/>
+    <text x="386" y="47" fill="#dceaf4" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">Settlement matching</text>
+
+    <rect x="640" y="0" width="290" height="76" rx="38" fill="#0d233b" stroke="#2c5b78"/>
+    <circle cx="678" cy="38" r="13" fill="#33d6b4"/>
+    <text x="706" y="47" fill="#dceaf4" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">Auditable writes</text>
+
+    <rect x="960" y="0" width="290" height="76" rx="38" fill="#0d233b" stroke="#2c5b78"/>
+    <circle cx="998" cy="38" r="13" fill="#33d6b4"/>
+    <text x="1026" y="47" fill="#dceaf4" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="600">Observable runtime</text>
+  </g>
+
+  <text x="110" y="690" fill="#7895ad" font-family="Segoe UI, Arial, sans-serif" font-size="18">Python 3.12 · FastAPI · PostgreSQL · SQLAlchemy · Docker · Kubernetes · Prometheus</text>
+</svg>

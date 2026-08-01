@@ -1,0 +1,58 @@
+{
+  "annotations": {"list": []},
+  "editable": true,
+  "panels": [
+    {
+      "title": "Request rate",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "sum by (path, status) (rate(spendledger_http_requests_total[5m]))",
+          "legendFormat": "{{path}} {{status}}"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+    },
+    {
+      "title": "p95 latency",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le, path) (rate(spendledger_http_request_duration_seconds_bucket[5m])))",
+          "legendFormat": "{{path}}"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+    },
+    {
+      "title": "Card events",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "sum by (event_type, result) (rate(spendledger_card_events_total[5m]))",
+          "legendFormat": "{{event_type}} {{result}}"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8}
+    },
+    {
+      "title": "Reconciliation exceptions",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "sum by (status) (increase(spendledger_reconciliation_items_total{status!=\"matched\"}[1h]))",
+          "legendFormat": "{{status}}"
+        }
+      ],
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8}
+    }
+  ],
+  "schemaVersion": 39,
+  "tags": ["spendledger", "card-spend", "reconciliation"],
+  "templating": {"list": []},
+  "time": {"from": "now-1h", "to": "now"},
+  "timezone": "browser",
+  "title": "SpendLedger Operations",
+  "uid": "spendledger-ops",
+  "version": 1
+}
