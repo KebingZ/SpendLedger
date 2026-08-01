@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "lucide-react": "^0.468.0",
+    "lucide-react": "^0.577.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "recharts": "^3.10.1"
@@ -22,9 +22,9 @@
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.17.0",
     "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
+    "eslint-plugin-react-refresh": "^0.5.3",
     "globals": "^15.14.0",
-    "typescript": "~5.7.2",
+    "typescript": "~5.9.3",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5"
   }
