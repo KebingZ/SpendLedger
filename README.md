@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/KebingZ/spend-ledger/actions/workflows/ci.yml">
-    <img src="https://github.com/KebingZ/spend-ledger/actions/workflows/ci.yml/badge.svg" alt="CI">
+  <a href="https://github.com/KebingZ/SpendLedger/actions/workflows/ci.yml/badge.svg">
+    <img src="https://github.com/KebingZ/SpendLedger/actions/workflows/ci.yml/badge.svg" alt="CI">
   </a>
   <img src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white" alt="Python 3.12">
   <img src="https://img.shields.io/badge/FastAPI-0.115+-009688?logo=fastapi&logoColor=white" alt="FastAPI">
